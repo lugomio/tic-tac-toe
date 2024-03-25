@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe - lugom.io</title>
+    <meta name="title" content="Tic Tac Toe - lugom.io">
+    <meta name="description" content="This is a project of a tic-tac-toe game where you play against the CPU.">
+    <meta property="og:title" content="Tic Tac Toe - lugom.io">
+    <meta property="og:description" content="This is a project of a tic-tac-toe game where you play against the CPU.">
+    <meta property="og:image" content="https://lugom.io/projects/tic-tac-toe/assets/img/banner.png">
+    <meta name="twitter:title" content="Tic Tac Toe - lugom.io">
+    <meta name="twitter:description" content="This is a project of a tic-tac-toe game where you play against the CPU.">
+    <meta name="twitter:image" content="https://lugom.io/projects/tic-tac-toe/assets/img/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="https://lugom.io/assets/images/favicon.png" type="image/png">
+    <link rel="canonical" href="https://lugom.io/projects/tic-tac-toe/">
+</head>
+
+<body>
+
+    <main class="container">
+        <header>
+            <div>
+                <img src="./assets/img/logo-icon.svg" alt="tic tac toe logo">
+                <h1>Tic Tac Toe<br>(XO) game</h1>
+            </div>
+            <button id="restart">Restart</button>
+        </header>
+        <section class="game">
+            <div class="row">
+                <div class="position" data-ref="0"></div>
+                <div class="position" data-ref="1"></div>
+                <div class="position" data-ref="2"></div>
+            </div>
+            <div class="row">
+                <div class="position" data-ref="3"></div>
+                <div class="position" data-ref="4"></div>
+                <div class="position" data-ref="5"></div>
+            </div>
+            <div class="row">
+                <div class="position" data-ref="6"></div>
+                <div class="position" data-ref="7"></div>
+                <div class="position" data-ref="8"></div>
+            </div>
+        </section>
+        <section class="simbols">
+            <div>
+                <img src="./assets/img/x-icon.svg" draggable="false" alt="player x">
+                <span>YOU: 0</span>
+            </div>
+            <div>
+                <img src="./assets/img/o-icon.svg" draggable="false" alt="cpu o">
+                <span>CPU: 0</span>
+            </div>
+        </section>
+        <section class="winner">
+        </section>
+    </main>
+
+    <div class="error">
+        <span>Movimento inválido!</span>
+        <div class="bar"></div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+    <script id="fixedNavLugomJs" src="https://lugom.io/assets/js/fixedNavLugom.js"></script>
+</body>
+
+</html>
